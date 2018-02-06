@@ -3,18 +3,19 @@ Requirements
 
 .. This section is a required part of any workshop and should list requirements such as node configuration, hypervisor and AOS version, templates, software, network configuration, and IP addresses
 
-Nutanix Hosted Cluster
+Nutanix-Hosted Cluster
 ++++++++++++++++++++++
 
 To complete this workshop you will be provided with the following resources:
 
 - A Nutanix cluster running AOS 5.1+ and AHV 20160925.90+
-- Environment Details Worksheet - *Contains environment IP addresses and credentials*
+- Environment Details Worksheet
 
   .. note:: The subnet IP scheme provided in your Environment Details Worksheet will be used for the static VM IPs detailed below.
 
-- Windows Server 2012 R2 & Windows 10 templates - *Available on \\\\AFC-POCFS\\Workshops\\Templates*
-- Required software - *Available on \\\\AFC-POCFS\\Workshops\\Example\\Software*
+- Windows Server 2012 R2 & Windows 10 templates - Available on ``\\AFC-POCFS\Workshops\Templates``
+- Required software - Available on ``\\AFC-POCFS\Workshops\Example\Software``
+
   - Matt's Cool Tool 1.0
   - Some Other Thing 2.2
   - Radical Plugin 0.1
@@ -27,20 +28,8 @@ To complete this workshop you will be provided with the following resources:
   VM1            10.XXX.YYY.4     Something
   ============== ================ ===============
 
-Environment Setup
-.................
-
-.. The setup section should direct the user to any generic guides such as AD or PC deployment used across multiple workshops. Any additional custom setup instructions should be created in the reqs/ subdirectory and referenced here.
-
-If not already completed, follow the exercises below prior to beginning :ref:`example-lab1`:
-
-  - :ref:`prism-element-setup`
-  - :ref:`prism-central-setup`
-  - :ref:`active-directory-setup`
-  - :ref:`custom-staging`
-
-Other Nutanix Cluster
-+++++++++++++++++++++
+Your Own Nutanix Cluster
+++++++++++++++++++++++++
 
 To complete this workshop using a non-Nutanix Hosted environment, you'll need access to the following resources:
 
@@ -70,7 +59,9 @@ To complete this workshop using a non-Nutanix Hosted environment, you'll need ac
   ============== ===============
 
 Environment Setup
-.................
++++++++++++++++++
+
+.. The setup section should direct the user to any generic guides such as AD or PC deployment used across multiple workshops. Any additional custom setup instructions should be created in the reqs/ subdirectory and referenced here.
 
 If not already completed, follow the exercises below prior to beginning :ref:`example-lab1`:
 
@@ -78,3 +69,5 @@ If not already completed, follow the exercises below prior to beginning :ref:`ex
   - :ref:`prism-central-setup`
   - :ref:`active-directory-setup` - *Existing AD environment can be supplemented*
   - :ref:`custom-staging`
+
+.. include:: ./custom-staging.rst

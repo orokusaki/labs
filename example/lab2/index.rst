@@ -31,15 +31,16 @@ Codeblocks
 
 You can insert code into your lab guides both inline and via external files. Inline is a great option for providing command line instructions or display shorter code snippets.
 
-.. note:: `Here <http://www.sphinx-doc.org/en/stable/markup/code.html>`_ is a reference for even more code options available in Sphinx, including emphasizing individual lines. A list of languages available for markup can be found `here <http://pygments.org/docs/lexers/>`_.
+.. note:: `Here <http://www.sphinx-doc.org/en/stable/markup/code.html>`_ is a reference for even more code options available in Sphinx, including emphasizing individual lines.
 
 Inline
 ......
 
 Using an SSH client, execute the following:
 
-.. code-block:: none
+.. code-block:: bash
   :name: inline-code-example
+  :caption: INLINE CODE EXAMPLE
 
   > ssh nutanix@<NUTANIX-CLUSTER-IP>
   > acli
@@ -51,7 +52,7 @@ Using an SSH client, execute the following:
 
 .. note:: When using **acli**, you can use the Tab key to autocomplete fields. Pressing Tab twice lists available namespaces and values.
 
-The name option can be used to reference code blocks like this - :ref:`inline-code-example`
+The name/caption arguments are optional, and should only be used is you need to reference the code from another part of the document, like this: :ref:`inline-code-example`
 
 External File
 .............
@@ -64,6 +65,8 @@ Use the literalinclude directive to create a code block from an external file. T
    :linenos:
    :caption: EXAMPLE.PY
    :name: literal-include-example
+
+.. note:: For proper color markup, specify the language of your code using one of the supported lexers found `here <http://pygments.org/docs/lexers/>`_.
 
 Takeaways
 +++++++++
