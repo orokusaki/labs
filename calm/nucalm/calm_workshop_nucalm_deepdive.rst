@@ -3,10 +3,10 @@ Calm Deep Dive
 ********************
 
 
-NuCalm Entities in Aplos
+Calm Entities in Aplos
 ************************
 
-NuCalm uses a mix of Resource Intentful and Procedural APIs. This is due to the fact that all lifecycle operations on applications may not be intentful. 
+Calm uses a mix of Resource Intentful and Procedural APIs. This is due to the fact that all lifecycle operations on applications may not be intentful. 
 
 **Note:** The challenges and use-cases of intetful API's are described in another document 
 
@@ -36,10 +36,10 @@ In case of failure, the Component shall update the IntentSpec with the spec of t
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image11.png
 
-NuCalm Components
+Calm Components
 *****************
 - API Service - Styx
-- NuCalm Engine - Jove, Hercules & Iris
+- Calm Engine - Jove, Hercules & Iris
 - Execution Engine - Epsilon
 
 Engine Design
