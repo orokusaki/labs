@@ -42,9 +42,9 @@ Calm understands dependencies between components in an application, allowing it 
 
 1-Click application provisioning is possible with Calm’s application-focused interface, whether the application is a single VM or multiple VMs being provisioned in the backend. 
 
-**AppStore**
+**Marketplace**
 
-NuCalm contains a global AppStore which is a marketplace to publish and consume applications. While initially Nutanix and select partners will publish applications to this AppStore, over time, NTNX will open up this AppStore to a larger group of partners and developers.
+Calm contains a global Marketplace which is a marketplace to publish and consume applications. While initially Nutanix and select partners will publish applications to this Marketplace, over time, NTNX will open up this Marketplace to a larger group of partners and developers.
 
 Publishers can upload their application designs (a.k.a. blueprints) to the Marketplace. After review, these will be published and made available to consumers who choose to select and launch these applications within thier infrastructure. 
 
@@ -54,7 +54,7 @@ Admins can whitelist blueprints, design and publish their own application bluepr
 
 **Multi-cloud**
 
-NuCalm will eventually support multiple hypervisors and cloud providers, while being Nutanix-first in terms of supporting AHV, Xi, and AWS for a great user experience. Notions for other providers like AWS, Azure etc would be supported, whether they exist in AHV/Xi today or not. E.g. A user can use NuCalm across AHV and AWS, but won’t get the feature goodness or convenience offered by the deeper AHV and Xi integration from Nutanix.
+Calm will eventually support multiple hypervisors and cloud providers, while being Nutanix-first in terms of supporting AHV, Xi, and AWS for a great user experience. Notions for other providers like AWS, Azure etc would be supported, whether they exist in AHV/Xi today or not. E.g. A user can use NuCalm across AHV and AWS, but won’t get the feature goodness or convenience offered by the deeper AHV and Xi integration from Nutanix.
 
 Provider support will be based on customer requirements, with initial targets being AHV/AWS (1.0), followed quickly by ESXi, Xi and then other platforms (Openstack, AzureStack,…).
 
@@ -64,7 +64,7 @@ Calm also enables Nutanix’s App Mobility Fabric as all of its features come to
 
 **Runbooks**
 
-Using the NuCalm orchestration engine (a.k.a. Epsilon), Calm enables runbook orchestration across services and applications in the customer’s hybrid cloud infrastructure. Runbooks can be triggered both manually by end-users based on role-based access or hooked up to monitoring and service-desk tools for automated execution. Calm will display streaming logs for activities being performed and maintain audit logs for all operations performed by users in the system.
+Using the Calm orchestration engine (a.k.a. Epsilon), Calm enables runbook orchestration across services and applications in the customer’s hybrid cloud infrastructure. Runbooks can be triggered both manually by end-users based on role-based access or hooked up to monitoring and service-desk tools for automated execution. Calm will display streaming logs for activities being performed and maintain audit logs for all operations performed by users in the system.
 
 The runbook engine will also be called out to by internal entities within the Nutanix system to perform orchestration tasks using its capabilities.
 
