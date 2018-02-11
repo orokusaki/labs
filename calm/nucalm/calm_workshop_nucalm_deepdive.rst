@@ -319,14 +319,14 @@ Despite entities inheriting properties, a dependency from one Calm object to ano
 
 Dependencies
 ************
-Dependencies in nuCalm only hold for system actions. They can be expressed in three ways:
+Dependencies in Calm only hold for system actions. They can be expressed in three ways:
 
 **Dependency Types**
 
 - Inherent dependencies:
 
    These are inherent to the model and no specification is necessary.
-   For eg. Substrate has to be created before packages and services. Services have to be stopped before package    is uninstalled etc. In terms of dependencies it translates into services depend on their packages which both    depend on the underlying substrate. They are inherent to the system and used by system actions.
+   For eg. Substrate has to be created before packages and services. Services have to be stopped before package is uninstalled etc. In terms of dependencies it translates into services depend on their packages which both depend on the underlying substrate. They are inherent to the system and used by system actions.
 
 - Explicit dependencies:
 
@@ -449,7 +449,7 @@ The attrs field in variables would be used to store secret related attributes. A
 
 **Credential**
 
-A credential is used in nuCalm to store sensitive information like passwords/keys. These details are used connect to a user/third party system. From the AppSpec doc, the way to define a credential is given as follows:
+A credential is used in Calm to store sensitive information like passwords/keys. These details are used connect to a user/third party system. From the AppSpec doc, the way to define a credential is given as follows:
 
 .. code-block:: json
 
@@ -491,7 +491,7 @@ Deployment Details
 
 **Packaging Mechanism - RPM Packages**
 
-The following rpm packages would be built as part of nucalm continuos integration process:
+The following rpm packages would be built as part of calm continuos integration process:
 
 1. calm-engine
 2. epsilon
@@ -504,7 +504,7 @@ Docker images would be built using DockerFiles which would pull the respective r
 
 Dependencies
 
-Services required by nucalm:
+Services required by calm:
 
 - IDF
 - Uhura
@@ -514,7 +514,7 @@ Services required by nucalm:
 - Aplos
 - ElasticStask
 
-Services dependent on nucalm:
+Services dependent on calm:
 
 - Aplos
 
