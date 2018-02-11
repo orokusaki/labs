@@ -5,7 +5,7 @@ Calm Overview
 Overview
 ********
 
-Calm allows Nutanix Enterprise customers to seamlessly select, provision, deploy & manage their Business Apps across all their infrastructure, both private and public cloud. Calm ties together an AppStore, App Lifecycle, Monitoring & Remediation by providing single control-point for managing heterogeneous infrastructure, be it VMs or containers, or even baremetal servers. Calm will eventually support all the components required to manage a complete Software Defined Data Center. 
+Calm allows Nutanix Enterprise customers to seamlessly select, provision, deploy & manage their Business Apps across all their infrastructure, both private and public cloud. Calm ties together a Marketplace, App Lifecycle, Monitoring & Remediation by providing single control-point for managing heterogeneous infrastructure, be it VMs or containers, or even baremetal servers. Calm will eventually support all the components required to manage a complete Software Defined Data Center. 
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image16.png
 
@@ -153,7 +153,7 @@ The ability to quickly try out partner and third-party applications helps NTNX b
 
 **Multi-cloud**
 
-Most enterprises are either already using multiple cloud providers or evaluating options across both newer and legacy infrastructure. Customers prefer to have a single automation plane across all their infrastructure, not just Nutanix AHV. Most of our customers will have both AHV and VMware, with Xi and upcoming AWS also in use. In such cases, Calm provides an onramp to our customers onto both AHV and Xi from other clouds. All NTNX AppStore blueprints are configured for Nutanix as the primary choice. 
+Most enterprises are either already using multiple cloud providers or evaluating options across both newer and legacy infrastructure. Customers prefer to have a single automation plane across all their infrastructure, not just Nutanix AHV. Most of our customers will have both AHV and VMware, with Xi and upcoming AWS also in use. In such cases, Calm provides an onramp to our customers onto both AHV and Xi from other clouds. All NTNX Marketplace blueprints are configured for Nutanix as the primary choice. 
 
 Having Calm as the common management plane also ensures that no matter what other provider the customer uses, the Nutanix management and automation plane still provides value to the customer.
 
