@@ -5,18 +5,18 @@ Calm Overview
 Overview
 ********
 
-NuCalm allows Nutanix Enterprise customers to seamlessly select, provision, deploy & manage their Business Apps across all their infrastructure, both private and public cloud. NuCalm ties together an AppStore, App Lifecycle, Monitoring & Remediation by providing single control-point for managing heterogeneous infrastructure, be it VMs or containers, or even baremetal servers. NuCalm will eventually support all the components required to manage a complete Software Defined Data Center. 
+Calm allows Nutanix Enterprise customers to seamlessly select, provision, deploy & manage their Business Apps across all their infrastructure, both private and public cloud. Calm ties together an AppStore, App Lifecycle, Monitoring & Remediation by providing single control-point for managing heterogeneous infrastructure, be it VMs or containers, or even baremetal servers. Calm will eventually support all the components required to manage a complete Software Defined Data Center. 
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image16.png
 
-To enable adoption and encourage enterprises to use the NTNX platform, NuCalm will not restrict itself to Nutanix (AHV/Xi), but support multiple platforms used by customers so that customers get used to a single self-service and automation interface via which they can interact with all their infrastructure and use it as a bridge to move more and more into the Nutanix ecosystem and future offerings.
+To enable adoption and encourage enterprises to use the NTNX platform, Calm will not restrict itself to Nutanix (AHV/Xi), but support multiple platforms used by customers so that customers get used to a single self-service and automation interface via which they can interact with all their infrastructure and use it as a bridge to move more and more into the Nutanix ecosystem and future offerings.
 
 Prism Central VM sized depending on requirements
 
 - Small: 12Gb + 4Gb for Calm.
 - Large: 32Gb + 8Gb for Calm.
 
-NuCalm is deployed alongside SSP in the Prism Central VM. NuCalm consumes multiple Nutanix internal services and is not a standalone component. By extension, users must have a Nutanix Prism Central VM to enable NuCalm functionality.
+Calm is deployed alongside SSP in the Prism Central VM. Calm consumes multiple Nutanix internal services and is not a standalone component. By extension, users must have a Nutanix Prism Central VM to enable Calm functionality.
 
 **Use Cases**
 
@@ -29,18 +29,18 @@ NuCalm is deployed alongside SSP in the Prism Central VM. NuCalm consumes multip
    - Private hypervisors and public cloud together.
 
 
-WHAT: NuCalm Components
+WHAT: Calm Components
 ***********************
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image10.png
 
 **Application-focus**
 
-NuCalm is an application-centric view of IT infrastructure, as compared to the existing VM-centric views for most IT management planes. As IT evolves to microservices with a focus on self-service and the business user, the business increasingly consumes applications, not the VMs or containers underlying the application. The basic unit of creation within NuCalm is the application, with a single VM being a simpler application with n=1. Applications containing multiple VMs or containers are provisioned, managed and deleted as a set instead of independent units. 
+Calm is an application-centric view of IT infrastructure, as compared to the existing VM-centric views for most IT management planes. As IT evolves to microservices with a focus on self-service and the business user, the business increasingly consumes applications, not the VMs or containers underlying the application. The basic unit of creation within Calm is the application, with a single VM being a simpler application with n=1. Applications containing multiple VMs or containers are provisioned, managed and deleted as a set instead of independent units. 
 
-NuCalm understands dependencies between components in an application, allowing it to manage and perform multi-VM operations at an application level. Changes like scale up for one component propagate across the application, with NuCalm resolving other tasks like editing load balancers appropriately.
+Calm understands dependencies between components in an application, allowing it to manage and perform multi-VM operations at an application level. Changes like scale up for one component propagate across the application, with Calm resolving other tasks like editing load balancers appropriately.
 
-1-Click application provisioning is possible with NuCalm’s application-focused interface, whether the application is a single VM or multiple VMs being provisioned in the backend. 
+1-Click application provisioning is possible with Calm’s application-focused interface, whether the application is a single VM or multiple VMs being provisioned in the backend. 
 
 **AppStore**
 
@@ -60,35 +60,35 @@ Provider support will be based on customer requirements, with initial targets be
 
 **App Mobility**
 
-NuCalm also enables Nutanix’s App Mobility Fabric as all of its features come together. For applications where we have access to the storage layer (on AHV/Xi), we’ll be able to leverage deeper features of the Nutanix platform to provide seamless mobility across hybrid cloud for customers. On platforms where we have restricted access to storage, the application ‘moves’ may involve redeploying the application on the new cloud based on a triggering event. The exact mechanism and scope for this is still TBD.
+Calm also enables Nutanix’s App Mobility Fabric as all of its features come together. For applications where we have access to the storage layer (on AHV/Xi), we’ll be able to leverage deeper features of the Nutanix platform to provide seamless mobility across hybrid cloud for customers. On platforms where we have restricted access to storage, the application ‘moves’ may involve redeploying the application on the new cloud based on a triggering event. The exact mechanism and scope for this is still TBD.
 
 **Runbooks**
 
-Using the NuCalm orchestration engine (a.k.a. Epsilon), NuCalm enables runbook orchestration across services and applications in the customer’s hybrid cloud infrastructure. Runbooks can be triggered both manually by end-users based on role-based access or hooked up to monitoring and service-desk tools for automated execution. NuCalm will display streaming logs for activities being performed and maintain audit logs for all operations performed by users in the system.
+Using the NuCalm orchestration engine (a.k.a. Epsilon), Calm enables runbook orchestration across services and applications in the customer’s hybrid cloud infrastructure. Runbooks can be triggered both manually by end-users based on role-based access or hooked up to monitoring and service-desk tools for automated execution. Calm will display streaming logs for activities being performed and maintain audit logs for all operations performed by users in the system.
 
 The runbook engine will also be called out to by internal entities within the Nutanix system to perform orchestration tasks using its capabilities.
 
 **Environments**
 
-NuCalm provides support for multiple environments in the customer datacenter (dev/QA/staging/production etc). Each environment will have its own constraints and the same blueprint may be deployed at a different scale or on a different provider depending on the user role and environment requested. This will also enable the usage of NuCalm for building more complex CI/CD pipelines for customer infrastructure. 
+Calm provides support for multiple environments in the customer datacenter (dev/QA/staging/production etc). Each environment will have its own constraints and the same blueprint may be deployed at a different scale or on a different provider depending on the user role and environment requested. This will also enable the usage of Calm for building more complex CI/CD pipelines for customer infrastructure. 
 
 **CI-CD Pipelines**
 
-NuCalm enables continuous integration and deployment pipelines across multiple environments for customers. With potential Jenkins integration, customers will be able to track the progress of code commits across multiple environments for each application, and be able to have an automated process (with approvals) for end-to-end deployment across their infrastructure.
+Calm enables continuous integration and deployment pipelines across multiple environments for customers. With potential Jenkins integration, customers will be able to track the progress of code commits across multiple environments for each application, and be able to have an automated process (with approvals) for end-to-end deployment across their infrastructure.
 
 **Budgets**
 
-NuCalm provides a chargeback and budgeting mechanism via the budgets entity. For private clouds (AHV/ESXi), it lets the user define the costs (per vCPU/GB RAM/GB storage) of infrastructure per cluster and builds a consumption model based on its usage by business groups. For public clouds (Xi/AWS), NuCalm tracks approximate usage via available platform APIs, showing overall expenditure across hybrid clouds as a single unified view. IT can add a surcharge to the public cloud cost to account for software licensing and management overhead that they may incur.
+Calm provides a chargeback and budgeting mechanism via the budgets entity. For private clouds (AHV/ESXi), it lets the user define the costs (per vCPU/GB RAM/GB storage) of infrastructure per cluster and builds a consumption model based on its usage by business groups. For public clouds (Xi/AWS), Calm tracks approximate usage via available platform APIs, showing overall expenditure across hybrid clouds as a single unified view. IT can add a surcharge to the public cloud cost to account for software licensing and management overhead that they may incur.
 
-Quotas are supported in NuCalm v1.0, carried over from SSP. However, over time, NTNX expects to deprecate these and move customers over to thinking about all their application VMs and infrastructure in $ terms. 
+Quotas are supported in Calm v1.0, carried over from SSP. However, over time, NTNX expects to deprecate these and move customers over to thinking about all their application VMs and infrastructure in $ terms. 
 
 **Policy Engine**
 
-The NuCalm policy engine adds a global layer of policy-based controls to the self-service and automation interface. Multiple policy-types will be added over time, with custom policies also being made available to users so they can roll their own. The below is an indicative snapshot of the policies we can add, with more getting added to the system based on customer feedback.
+The Calm policy engine adds a global layer of policy-based controls to the self-service and automation interface. Multiple policy-types will be added over time, with custom policies also being made available to users so they can roll their own. The below is an indicative snapshot of the policies we can add, with more getting added to the system based on customer feedback.
 
 - Expiry
 
-Expiry policies control the lifetime of the applications provisioned using NuCalm. Admins can control and set this to a hard date or a relative value. Expiry extensions can be requested and must be approved by the admin of the system. 
+Expiry policies control the lifetime of the applications provisioned using Calm. Admins can control and set this to a hard date or a relative value. Expiry extensions can be requested and must be approved by the admin of the system. 
 
 - Underutilized Infra
 
@@ -100,7 +100,7 @@ Underutilized or expired applications can be put into suspended mode and cleaned
 
 - Scheduler
 
-A scheduler allows NuCalm users to schedule application-specific events to occur on a timed basis. This can include things like provision/deprovision/scale up/scale down etc as well as any runbooks that need to be executed periodically.
+A scheduler allows Calm users to schedule application-specific events to occur on a timed basis. This can include things like provision/deprovision/scale up/scale down etc as well as any runbooks that need to be executed periodically.
 
 - Budget Policies
 
@@ -108,15 +108,15 @@ Budget policies control the behavior of the budget entity in the system. They ca
 
 - Approvals
 
-Approval policies are used to request permissions for any specified event in the system. Approvals are a blocking action and must be resolved before the activity can proceed. Approvals will be in system as well as sent via email. NuCalm will integrate with ServiceNow approval flows and could potentially call out to other means like configured SMS gateways etc. 
+Approval policies are used to request permissions for any specified event in the system. Approvals are a blocking action and must be resolved before the activity can proceed. Approvals will be in system as well as sent via email. Calm will integrate with ServiceNow approval flows and could potentially call out to other means like configured SMS gateways etc. 
 
 - Notifications
 
-Notifications in the NuCalm system are similar to approvals, but are non-blocking activities, using the same surfacing actions. These are used to notify admins and devops users of activities underway in the NuCalm system.
+Notifications in the Calm system are similar to approvals, but are non-blocking activities, using the same surfacing actions. These are used to notify admins and devops users of activities underway in the Calm system.
 
 **Licensing**
 
-Licensing for NuCalm: 
+Licensing for Calm: 
 
 - Separate SKU, works with both Prism Starter & Pro
 
@@ -128,14 +128,14 @@ Licensing for NuCalm:
 
 - Uniform Pricing for Simplicity with Hybrid Cloud
 
-WHY: NuCalm Reasoning
+WHY: Calm Reasoning
 *********************
 
 The business care about Apps, not VMs.  Managing Apps is challenging. Apps are complicated…. Application health is critical to meeting business demands and SLA's.  As apps become more and more comlpex, tools need to evovle to mange the copmlexity of deployment, monitoring, and scaling across varying enviornments.
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image18.png
 
-Hybrid Clouds add another layer of challenges.  Environments and plattforms are evolving faster than applications, where each platform or environment requires subject matter experts to manage them.  NuCalm incorporates instrumentation needed to manage this complexity from a single control-point. 
+Hybrid Clouds add another layer of challenges.  Environments and plattforms are evolving faster than applications, where each platform or environment requires subject matter experts to manage them.  Calm incorporates instrumentation needed to manage this complexity from a single control-point. 
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image19.png
 
@@ -145,17 +145,17 @@ As Nutanix moves up the stack from the IT infrastructure team towards devops and
 
 The Nutanix Enterprise OS abstracts away all these notions and bridges the gap between the private and the public cloud with a consumption focus.
 
-**AppStore**
+**Marketplace**
 
-One of the main challenges that hampers adoption of automation tooling is the initial bootstrapping and upfront work needed to save man-hours in the future. To enable an easy on-ramp, NuCalm has the ability to provide a library of readymade template blueprints consisting of commonly used applications. These can be consumed directly by customer DevOps or used as lego blocks and edited as per requirements to model custom enterprise applications.
+One of the main challenges that hampers adoption of automation tooling is the initial bootstrapping and upfront work needed to save man-hours in the future. To enable an easy on-ramp, Calm has the ability to provide a library of readymade template blueprints consisting of commonly used applications. These can be consumed directly by customer DevOps or used as lego blocks and edited as per requirements to model custom enterprise applications.
 
 The ability to quickly try out partner and third-party applications helps NTNX build a 2-sided marketplace with our users, enabling higher usefulness for the platform as a whole. This is a powerful model, since it also enables our end-users to quickly satisfy requests for modern applications from developers, without having to first do a month-long deep dive into how to get the specific application up and running.
 
 **Multi-cloud**
 
-Most enterprises are either already using multiple cloud providers or evaluating options across both newer and legacy infrastructure. Customers prefer to have a single automation plane across all their infrastructure, not just Nutanix AHV. Most of our customers will have both AHV and VMware, with Xi and upcoming AWS also in use. In such cases, NuCalm provides an onramp to our customers onto both AHV and Xi from other clouds. All NTNX AppStore blueprints are configured for Nutanix as the primary choice. 
+Most enterprises are either already using multiple cloud providers or evaluating options across both newer and legacy infrastructure. Customers prefer to have a single automation plane across all their infrastructure, not just Nutanix AHV. Most of our customers will have both AHV and VMware, with Xi and upcoming AWS also in use. In such cases, Calm provides an onramp to our customers onto both AHV and Xi from other clouds. All NTNX AppStore blueprints are configured for Nutanix as the primary choice. 
 
-Having NuCalm as the common management plane also ensures that no matter what other provider the customer uses, the Nutanix management and automation plane still provides value to the customer.
+Having Calm as the common management plane also ensures that no matter what other provider the customer uses, the Nutanix management and automation plane still provides value to the customer.
 
 **App Mobility**
 
@@ -183,9 +183,9 @@ The policy engine was born from the realization that business rules and infrastr
 
 **Competition**
 
-NuCalm is an opinionated and UX-first automation layer that enables NTNX customers to manage their federated infrastructure. 
+Calm is an opinionated and UX-first automation layer that enables NTNX customers to manage their federated infrastructure. 
 
-NTNX competition in the automation and orchestration plane is NOT VMware vRA. As we launch Xi and bring NuCalm to Prism on-prem and the Xi control plane, the competition will be AWS foremost, with the possibility of smaller startups out-innovating NTNX as a company. This is why NuCalm is not be benchmarked to vRA features, though NTNX will prioritize features as per customer requirements for the Entery.
+NTNX competition in the automation and orchestration plane is NOT VMware vRA. As we launch Xi and bring Calm to Prism on-prem and the Xi control plane, the competition will be AWS foremost, with the possibility of smaller startups out-innovating NTNX as a company. This is why Calm is not be benchmarked to vRA features, though NTNX will prioritize features as per customer requirements for the Entery.
 
 
 Key Terms
@@ -303,11 +303,11 @@ A blueprint needs to include machine-readable bits on its licensing restrictions
 Policies are requirements for other different components for a blueprint. Policies specify what meta-objectives have to be met for a successful instantiation and use. For example, a policy can specify that the desired App can be instantiated on on-prem Infrastructure, or that a specific node type always requires more than 4 GB RAM.
 
 
-**AppStore**
+**Marketplace**
 
-An AppStore is essentially a classical economics Marketplace. Marketplace is the exchange channel between blueprint publishers and consumers. Publishers upload or publish their blueprints to the Marketplace to make it available for Consumers. Consumers search/browse the Marketplace to find desired Blueprints and then (depending on other considerations) download and use them.
+Marketplace is the exchange channel between blueprint publishers and consumers. Publishers upload or publish their blueprints to the Marketplace to make it available for Consumers. Consumers search/browse the Marketplace to find desired Blueprints and then (depending on other considerations) download and use them.
 
-- AppStore/Marketplace is ONLY for deployment automation and ease of use.
+- Marketplace is ONLY for deployment automation and ease of use.
 - BYOL: Customers need to input their own existing licenses into the apps.
 - NTNX is NOT taking software business from channel.
 
@@ -325,7 +325,7 @@ Key Actors / Dramatis Persona
 5.	OOB Users: These are users who do not exist in the system but are needed for approvals, notifications
 
 
-AppStore / Marketplace
+Marketplace
 **********************
 
 In designing the NTNX App Store we have two main choices, with different mix-n-match possibilites:
@@ -340,24 +340,24 @@ We have an additional wrinkle in that NuCalm can be deployed in a completely iso
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image1.png
 
-Functions of an AppStore
-************************
+Functions of a Marketplace
+**************************
 
 **Discovery**
 
-An AppStore allows consumers to discover needed services. In our case customers should be able to search by various criteria and recommendations to find blueprints they are interested in.
+A Marketplace allows consumers to discover needed services. In our case customers should be able to search by various criteria and recommendations to find blueprints they are interested in.
 
 **Reputation Metrics**
 
-AppStore keeps track of reputation, ratings & feedback of both producers and consumers. This greatly aids Discovery. 
+Marketplace keeps track of reputation, ratings & feedback of both producers and consumers. This greatly aids Discovery. 
 
 **Transaction Guarantees**
 
-AppStore provides transaction guarantees to producers and consumers when they enter into an exchange (when Blueprints are consumed or updated). If we allow monetization this guarantees the producer gets paid (in whatever virtual currency). 
+Marketplace provides transaction guarantees to producers and consumers when they enter into an exchange (when Blueprints are consumed or updated). If we allow monetization this guarantees the producer gets paid (in whatever virtual currency). 
 
 **Enforceable Property Rights**
 
-AppStore provides platform enforced intellectual property rights. This includes controls over if a Blueprint is shareable, editable, internals visible. Producers desire these guarantees for their IP.
+Marketplace provides platform enforced intellectual property rights. This includes controls over if a Blueprint is shareable, editable, internals visible. Producers desire these guarantees for their IP.
 
 **Support Forums**
 
@@ -365,11 +365,11 @@ Support forums provide a channel for the producers and consumers to interact out
 
 **Costing and Chargeback / Monetization**
 
-AppStore lets consumers see the costs associated with a Blueprint, including upfront costs and ongoing running costs.
+Marketplace lets consumers see the costs associated with a Blueprint, including upfront costs and ongoing running costs.
 
 **Curation and Approvals**
 
-AppStore provides curation and approvals for consuming blueprints, enforced by the competent authorities. The competent authorities here include: AppStore owners (Nutanix & on-prem admin), IT Admins & Platform Admins.
+Marketplace provides curation and approvals for consuming blueprints, enforced by the competent authorities. The competent authorities here include: Marketplace owners (Nutanix & on-prem admin), IT Admins & Platform Admins.
 
 
 Publishers
@@ -409,7 +409,7 @@ We need to make publishing as frictionless as possible. This will need:
 
 1.	Simplified and human writable Blueprint code
 2.	Complete command line tooling
-3.	Offline development (without connecting to central server or running full NuCalm server)
+3.	Offline development (without connecting to central server or running full Calm server)
 4.	Lightweight and fast
 5.	Integration into modern development workflows (Version Control, Code Reviews, Smoke Tests)
 
