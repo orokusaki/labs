@@ -141,7 +141,7 @@ Hybrid Clouds add another layer of challenges.  Environments and plattforms are 
 
 **Application-Focus**
 
-As Nutanix moves up the stack from the IT infrastructure team towards devops and then to the business user, NTNX will provide context that the business user understands. With an application focus, the end-user, who does not understand the specifics of public and private cloud, can request exactly the application that is needed. This does not assume any knowledge about how the application is architected or how many VMs or containers are being provisioned in the backend. A simple consumption model where the user files a request and is charged as per usage is what we aim to provide with the NuCalm interface. 
+As Nutanix moves up the stack from the IT infrastructure team towards devops and then to the business user, NTNX will provide context that the business user understands. With an application focus, the end-user, who does not understand the specifics of public and private cloud, can request exactly the application that is needed. This does not assume any knowledge about how the application is architected or how many VMs or containers are being provisioned in the backend. A simple consumption model where the user files a request and is charged as per usage is what we aim to provide with the Calm interface. 
 
 The Nutanix Enterprise OS abstracts away all these notions and bridges the gap between the private and the public cloud with a consumption focus.
 
@@ -225,7 +225,7 @@ Used for access control and RBAC.
 
 **Blueprints**
 
-Blueprints are App Recipes. These recipes encompass App Architecture, Infrastructure choices, Provisioning & Deployment steps, App Bits, Command steps, Monitoring endpoints, Remediation steps, Licensing & Monetization, Policies. Every time a  Blueprint is executed it gives rise to an App.
+Blueprints are App Recipes. These recipes encompass App Architecture, Infrastructure choices, Provisioning & Deployment steps, App Bits, Command steps, Monitoring endpoints, Remediation steps, Licensing & Monetization, Policies. Every time a Blueprint is executed it gives rise to an App.
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image8.png
 
@@ -288,15 +288,15 @@ Command steps are common actions needed to maintain an application. Some of thes
 
 7. Monitoring Endpoints: 
 
-A blueprint optionally includes the steps needed to configure common monitoring solutions to setup monitoring for the newly deployed App. The blueprint specifies health checks and metrics along with warning & error thresholds for each node. In addition the blueprint specifies endpoints into the NuCalm platform where monitoring should feed alerts and other data.
+A blueprint optionally includes the steps needed to configure common monitoring solutions to setup monitoring for the newly deployed App. The blueprint specifies health checks and metrics along with warning & error thresholds for each node. In addition the blueprint specifies endpoints into the Calm platform where monitoring should feed alerts and other data.
 
 8. Remediation steps: 
 
-Remediation steps are needed to get the App to a healthy stage after monitoring or NuCalm detects runtime errors or alerts. They are triggered by data from the underlying platform or monitoring endpoints.
+Remediation steps are needed to get the App to a healthy stage after monitoring or Calm detects runtime errors or alerts. They are triggered by data from the underlying platform or monitoring endpoints.
 
 9. Licensing & Monetization: 
 
-A blueprint needs to include machine-readable bits on its licensing restrictions. This informs NuCalm if the blueprint is editable or shareable by the consumer. NuCalm can hide the actual scripts from the consumer if  so specified. Monetization decides if the blueprint publisher charges a cost for using it. See Chargeback.
+A blueprint needs to include machine-readable bits on its licensing restrictions. This informs Calm if the blueprint is editable or shareable by the consumer. Calm can hide the actual scripts from the consumer if  so specified. Monetization decides if the blueprint publisher charges a cost for using it. See Chargeback.
 
 10. Policies: 
 
