@@ -424,7 +424,7 @@ Later, if /secrets (or equivalent) are exposed as a top-level entity in Aplos, *
 
 **Secret Variable**
 
-Secret variables are supported in nuCalm. Any secret variable should follow the below structure:
+Secret variables are supported in Calm. Any secret variable should follow the below structure:
 
 .. code-block:: json
 
@@ -493,7 +493,7 @@ Deployment Details
 
 The following rpm packages would be built as part of nucalm continuos integration process:
 
-1. nucalm-engine
+1. calm-engine
 2. epsilon
 
 These packages would be stored in a private yum repository.
@@ -518,7 +518,7 @@ Services dependent on nucalm:
 
 - Aplos
 
-**nucalm-engine** and **epsilon** would register with service discovery when they are run. Similarly, the dependent services would be discovered using platform’s service discovery mechanism (The assumption now is that it would use zookeeper).
+**calm-engine** and **epsilon** would register with service discovery when they are run. Similarly, the dependent services would be discovered using platform’s service discovery mechanism (The assumption now is that it would use zookeeper).
 
 .. |image0| image:: nucalm/media/image11.png
 .. |image1| image:: nucalm/media/image15.png
