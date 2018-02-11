@@ -54,7 +54,7 @@ Admins can whitelist blueprints, design and publish their own application bluepr
 
 **Multi-cloud**
 
-Calm will eventually support multiple hypervisors and cloud providers, while being Nutanix-first in terms of supporting AHV, Xi, and AWS for a great user experience. Notions for other providers like AWS, Azure etc would be supported, whether they exist in AHV/Xi today or not. E.g. A user can use NuCalm across AHV and AWS, but won’t get the feature goodness or convenience offered by the deeper AHV and Xi integration from Nutanix.
+Calm will eventually support multiple hypervisors and cloud providers, while being Nutanix-first in terms of supporting AHV, Xi, and AWS for a great user experience. Notions for other providers like AWS, Azure etc would be supported, whether they exist in AHV/Xi today or not. E.g. A user can use Calm across AHV and AWS, but won’t get the feature goodness or convenience offered by the deeper AHV and Xi integration from Nutanix.
 
 Provider support will be based on customer requirements, with initial targets being AHV/AWS (1.0), followed quickly by ESXi, Xi and then other platforms (Openstack, AzureStack,…).
 
@@ -326,7 +326,7 @@ Key Actors / Dramatis Persona
 
 
 Marketplace
-**********************
+***********
 
 In designing the NTNX App Store we have two main choices, with different mix-n-match possibilites:
 
@@ -336,7 +336,7 @@ In designing the NTNX App Store we have two main choices, with different mix-n-m
 
 Two sided markets are notoriously hard to bootstrap. The usual approach is to create a high quality walled garden to build a customer base and then getting more third party producers in. This avoids the chicken and egg problem of bringing of both producers and consumers onboard at the same time.
 
-We have an additional wrinkle in that NuCalm can be deployed in a completely isolated on-prem installations where the users might want to publish Blueprints for internal consumption. 
+We have an additional wrinkle in that Calm can be deployed in a completely isolated on-prem installations where the users might want to publish Blueprints for internal consumption. 
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image1.png
 
