@@ -1,7 +1,6 @@
 **************************************
 Software Development Lifecycle (SDLC)
 **************************************
-
    
 SDLC Introduction
 *****************
