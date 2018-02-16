@@ -164,7 +164,7 @@ Monitor the execution of the Applciation until complete.
 .. |image3| image:: http://s3.nutanixworkshops.com/calm/lab8/image16.png
 .. |image4| image:: lab8/media/image15.png
 .. |image5| image:: lab8/media/image18.png
-.. |image6| image:: lab8/media/image10.png
+.. |image6| image:: lhttp://s3.nutanixworkshops.com/calm/lab8/image10.png
 .. |image20| image:: lab8/media/image11.png
 .. |image7| image:: lab8/media/image19.png
 .. |image8| image:: lab8/media/image20.png
