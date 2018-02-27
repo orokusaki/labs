@@ -1,30 +1,17 @@
-.. raw:: html
-  :file: jumbotron.html
+.. role:: raw-html(raw)
+   :format: html
 
-.. _intro-docs:
+Get Started
+===========
 
-.. toctree::
-  :maxdepth: 2
-  :caption:     Introduction
-  :name: _intro-docs
-  :hidden:
+If your Workshop is being completed as part of a Nutanix or Nutanix partner sponsored event, all necessary software, templates, credentials and networking information will be provided to you. **Select your Workshop from the sidebar and dive in!**
 
-  intro/getstarted
-  templates/index
-  .. ce
-  .. versions
-  .. building
-  intro/contact
+If this Workshop is being completed outside of the scenario described above, select your Workshop and carefully review the **Requirements** page to ensure your environment is capable of supporting the labs.
 
-.. _lab-docs:
+Interested in completing a Workshop using a Nutanix Hosted POC environment? :raw-html:`<a href="mailto:te@nutanix.com">Contact us.</a>`
 
-.. toctree::
-  :maxdepth: 2
-  :caption:     Workshops
-  :name: _lab-docs
-  :hidden:
+Find a bug? Typo? Have a great idea for a lab? :raw-html:`<a href="mailto:te@nutanix.com">Let us know.</a>`
 
-  workshop_setup/index
-  calm/index
-  .. vdi_ahv/index
-  .. example/index
+*Have fun,*
+
+Your friendly neighborhood Nutanix Enablement Team

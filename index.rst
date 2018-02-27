@@ -11,13 +11,9 @@
   :name: _intro-docs
   :hidden:
 
-  intro/getstarted
+  getstarted
   templates/index
   setup/index
-  .. ce
-  .. versions
-  .. building
-  .. intro/contact
 
 .. _lab-docs:
 
@@ -29,4 +25,4 @@
 
   calm/index
   vdi_ahv/index
-  .. example/index
+..  example/index

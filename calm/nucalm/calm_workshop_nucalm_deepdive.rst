@@ -3,10 +3,10 @@ Calm Deep Dive
 ********************
 
 
-NuCalm Entities in Aplos
+Calm Entities in Aplos
 ************************
 
-NuCalm uses a mix of Resource Intentful and Procedural APIs. This is due to the fact that all lifecycle operations on applications may not be intentful. 
+Calm uses a mix of Resource Intentful and Procedural APIs. This is due to the fact that all lifecycle operations on applications may not be intentful. 
 
 **Note:** The challenges and use-cases of intetful API's are described in another document 
 
@@ -36,10 +36,10 @@ In case of failure, the Component shall update the IntentSpec with the spec of t
 
 .. figure:: http://s3.nutanixworkshops.com/calm/nucalm/image11.png
 
-NuCalm Components
+Calm Components
 *****************
 - API Service - Styx
-- NuCalm Engine - Jove, Hercules & Iris
+- Calm Engine - Jove, Hercules & Iris
 - Execution Engine - Epsilon
 
 Engine Design
@@ -319,14 +319,14 @@ Despite entities inheriting properties, a dependency from one Calm object to ano
 
 Dependencies
 ************
-Dependencies in nuCalm only hold for system actions. They can be expressed in three ways:
+Dependencies in Calm only hold for system actions. They can be expressed in three ways:
 
 **Dependency Types**
 
 - Inherent dependencies:
 
    These are inherent to the model and no specification is necessary.
-   For eg. Substrate has to be created before packages and services. Services have to be stopped before package    is uninstalled etc. In terms of dependencies it translates into services depend on their packages which both    depend on the underlying substrate. They are inherent to the system and used by system actions.
+   For eg. Substrate has to be created before packages and services. Services have to be stopped before package is uninstalled etc. In terms of dependencies it translates into services depend on their packages which both depend on the underlying substrate. They are inherent to the system and used by system actions.
 
 - Explicit dependencies:
 
@@ -424,7 +424,7 @@ Later, if /secrets (or equivalent) are exposed as a top-level entity in Aplos, *
 
 **Secret Variable**
 
-Secret variables are supported in nuCalm. Any secret variable should follow the below structure:
+Secret variables are supported in Calm. Any secret variable should follow the below structure:
 
 .. code-block:: json
 
@@ -449,7 +449,7 @@ The attrs field in variables would be used to store secret related attributes. A
 
 **Credential**
 
-A credential is used in nuCalm to store sensitive information like passwords/keys. These details are used connect to a user/third party system. From the AppSpec doc, the way to define a credential is given as follows:
+A credential is used in Calm to store sensitive information like passwords/keys. These details are used connect to a user/third party system. From the AppSpec doc, the way to define a credential is given as follows:
 
 .. code-block:: json
 
@@ -491,9 +491,9 @@ Deployment Details
 
 **Packaging Mechanism - RPM Packages**
 
-The following rpm packages would be built as part of nucalm continuos integration process:
+The following rpm packages would be built as part of calm continuos integration process:
 
-1. nucalm-engine
+1. calm-engine
 2. epsilon
 
 These packages would be stored in a private yum repository.
@@ -504,7 +504,7 @@ Docker images would be built using DockerFiles which would pull the respective r
 
 Dependencies
 
-Services required by nucalm:
+Services required by calm:
 
 - IDF
 - Uhura
@@ -514,11 +514,11 @@ Services required by nucalm:
 - Aplos
 - ElasticStask
 
-Services dependent on nucalm:
+Services dependent on calm:
 
 - Aplos
 
-**nucalm-engine** and **epsilon** would register with service discovery when they are run. Similarly, the dependent services would be discovered using platform’s service discovery mechanism (The assumption now is that it would use zookeeper).
+**calm-engine** and **epsilon** would register with service discovery when they are run. Similarly, the dependent services would be discovered using platform’s service discovery mechanism (The assumption now is that it would use zookeeper).
 
 .. |image0| image:: nucalm/media/image11.png
 .. |image1| image:: nucalm/media/image15.png
