@@ -26,13 +26,13 @@ Param(
 ######################################
 
 $ifIndexdefault = 12                       #usually the NIC interface is 12
-  
+
 $markerfile = "C:\scripts\PoCmarker.txt"   #pass information after reboots
 
 $step1 = "STEP1"                           #Next step marker
-$step2 = "STEP2"                           #Next step marker   
+$step2 = "STEP2"                           #Next step marker
 $step3 = "STEP3"                           #Next step marker
-$done = "DONE"                             #Termination marker     
+$done = "DONE"                             #Termination marker
 $op = "===== "                             #Helps with my ocd
 
 ######################################
@@ -86,7 +86,7 @@ if ((test-Path $markerfile) -eq $true) {
    }
 }
 Else {
-      write-host "$op First Run" 
+      write-host "$op First Run"
       $nextstep = $step1
 }
 
@@ -155,7 +155,7 @@ $securepw =  $plainpw | ConvertTo-SecureString -AsPlainText -Force
    $ifIndex = $interface.ifIndex
    write-host "$op "
    write-host "$op "
-   write-host "The following defaults to setup your AD server." 
+   write-host "The following defaults to setup your AD server."
    write-host "Static IP for AD Server: $IPAddress"
    #write-host "$op Netmask: $Netmask"
    write-host "Prefix: $Prefix"
@@ -226,7 +226,7 @@ if ($nextstep -like $step3) {
     {
     $User.FirstName = $User.FirstName.substring(0,1).toupper()+$User.FirstName.substring(1).tolower()
     $FullName = $User.FirstName
-    $Sam = $User.FirstName 
+    $Sam = $User.FirstName
     $dnsroot = '@' + (Get-ADDomain).dnsroot
     $SAM = $sam.tolower()
     $UPN = $SAM + "$dnsroot"
@@ -236,7 +236,7 @@ if ($nextstep -like $step3) {
     try {
         if (!(get-aduser -Filter {samaccountname -eq "$SAM"})){
             New-ADUser -Name $FullName -AccountPassword (ConvertTo-SecureString $password -AsPlainText -force) -GivenName $User.FirstName  -Path $OU -SamAccountName $SAM -UserPrincipalName $UPN -EmailAddress $Email -Enabled $TRUE
-            Add-ADGroupMember -Identity $GroupName -Member $Sam
+            Add-ADGroupMember -Identity $GroupName -Members $Sam
             Write-Verbose "[PASS] Created $FullName"
             $successUsers += $FullName
         }
@@ -249,7 +249,7 @@ if ($nextstep -like $step3) {
     }
     if ( !(test-path $LogFolder)) {
         Write-Verbose "Folder [$($LogFolder)] does not exist, creating"
-        new-item $LogFolder -type directory -Force 
+        new-item $LogFolder -type directory -Force
         }
 
     Write-verbose "Writing logs"
@@ -259,4 +259,3 @@ if ($nextstep -like $step3) {
    #write a marker for when back from a reboot, pass on the pw too
    $EndStep3 = "DONE $plainpw"
    $EndStep3 | Out-File $markerfile
-
