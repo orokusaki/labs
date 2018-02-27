@@ -237,7 +237,7 @@ if ($nextstep -like $step3) {
     try {
         if (!(get-aduser -Filter {samaccountname -eq "$SAM"})){
             New-ADUser -Name $FullName -AccountPassword (ConvertTo-SecureString $password -AsPlainText -force) -GivenName $User.FirstName  -Path $OU -SamAccountName $SAM -UserPrincipalName $UPN -EmailAddress $Email -Enabled $TRUE
-            Add-ADGroupMember -Identity $GroupName -Members $Sam
+            Add-ADGroupMember -Identity $GroupName -Member $Sam
             Write-Verbose "[PASS] Created $FullName"
             $successUsers += $FullName
         }
