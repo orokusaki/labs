@@ -109,7 +109,7 @@ if (!$IPAddress) {
 if (!$Netmask) {
     $Netmask = Read-Host "$op Enter The Netmask For DC"
 }
-
+#>
 # Prompt for Prefix Length
 if (!$Prefix) {
     Write-Host "$op Netmask Prefix Examples: 25 = 255.255.255.128 / 24 = 255.255.255.0 / 23 = 255.255.254.0)"
@@ -154,6 +154,7 @@ $securepw =  $plainpw | ConvertTo-SecureString -AsPlainText -Force
    $interface | ft Name,ifIndex -AutoSize
    $ifIndex = $interface.ifIndex
    write-host "$op "
+
    write-host "$op "
    write-host "The following defaults to setup your AD server."
    write-host "Static IP for AD Server: $IPAddress"
@@ -259,3 +260,4 @@ if ($nextstep -like $step3) {
    #write a marker for when back from a reboot, pass on the pw too
    $EndStep3 = "DONE $plainpw"
    $EndStep3 | Out-File $markerfile
+}
